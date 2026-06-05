@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-api_key = os.getenv("API_KEY")
+api_key = os.getenv("4d7d5e43a92e30553f22f658150576ba")
 
 class Weatherapp(QWidget):
     def __init__(self):
@@ -150,7 +150,7 @@ class Weatherapp(QWidget):
         self.temperature_label.setText(f"{int(temp_c)}°C")
 
         self.emoji_label.setStyleSheet("font-size:80px;"\
-        "font-family:segeo UI emoji;")        
+        "font-family:Segoe UI Emoji;")        
         icon = data["weather"][0]["icon"]
         emoji = self.icon_to_emoji(icon)
         self.emoji_label.setText(emoji)
